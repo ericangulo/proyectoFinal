@@ -1,0 +1,21 @@
+/*reglas generales*/
+
+/*Media Query*/
+
+/** Reescribir colores */
+
+/** Productos */
+
+.titulo {
+    color: #037BC0;
+}
+
+.hero {
+    width: 320px;
+    height: 160px;
+}
+
+.imagen {
+    width: 320px;
+    height: 160px;
+}
