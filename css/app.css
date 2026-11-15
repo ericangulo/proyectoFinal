@@ -6,16 +6,232 @@
 
 /** Productos */
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.playfair {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header {
+    text-align: center;
+}
+
 .titulo {
     color: #037BC0;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
 .hero {
-    width: 320px;
-    height: 160px;
+    background-image: url(/imagenes/principal.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 70rem;
+    border: 2px solid gray;
+}
+
+section {
+    margin: 30px auto;
 }
 
 .imagen {
-    width: 320px;
-    height: 160px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0b95e6;
+    padding: 10px;
+}
+
+.logo {
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+.navegacion ul {
+    display: flex;
+    justify-content: center;
+    background-color:  #0b95e6;
+    gap: 30px;
+    flex: 1;
+    margin: 0;
+}
+
+.busqueda {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.busqueda input {
+    padding: 8px;
+    font-size: 16px;
+    width: 150px;
+}
+
+.busqueda button {
+    padding: 8px 15px;
+    margin: 0;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.flex{
+   display: flex;
+   justify-content: space-around;
+}
+
+.flex-column nav{
+    display:flex;
+    flex-direction: column;
+}
+
+.stat {
+    text-align: center;
+    margin: 0 30px;
+    width: fit-content; 
+    height: fit-content;
+    border: 2px solid gray;
+    overflow: hidden;
+}
+
+div h3 {
+    color: white;
+}
+
+.stat div {
+    background-color: #0b95e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat, div p {
+    color: white;
+    font-size: 19px;
+    width: 80%;
+    text-align: justify;
+}
+
+.stat h3 {
+    color: white;
+}
+
+div button {
+    background-color: greenyellow;
+    font-size: medium;
+    padding: 12px 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+.precio {
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(0 0 0 / 57%);
+    color: white;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-footer div {
+    width: 30%;
+}
+
+footer h3 {
+    color: white;
+    font-size: 3.0rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+}
+
+.copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.copyright h2{
+    font-size: 20px;
+}
+
+

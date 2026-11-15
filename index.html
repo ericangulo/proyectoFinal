@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce - Inicio</title>
     <link rel="stylesheet" href="./css/app.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="raleway">
 
     <header>
-        <h1>Tienda de <span class ="titulo">Muebles</span></h1>
+        <h1 class="playfair">Tienda de <span class ="titulo">Muebles</span></h1>
     </header>
 
-    <nav>
+    <nav class = "navegacion">
+
+        <div class="logo">
+            LOGO
+        </div>
+
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
@@ -26,177 +34,209 @@
             <li><a href="#">Galeria</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
+
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar">
+            <button>Buscar</button>
+        </div>
     </nav>
 
-    <div class="hero">
-        <img class = "imagen" src="./imagenes/principal.jpg">
-    </div>
+    <div class="hero"></div>
 
     <!--FILA 1-->
 
+    <h2 class="playfair">Nuestros productos</h2>
+
     <section>
-        <h2>Nuestros productos</h2>
-            <div>
+
+        <div class = "flex">
+
+            <div class = "stat">
 
                 <div>
                     <img class = "imagen" src="./imagenes/producto1.jpg">
                 </div>
 
                 <div>
-                    <h3>Producto 1</h3>
+
+                    <h3 class="playfair">Producto 1</h3>
 
                     <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quam deleniti sed recusandae vitae architecto eos corrupti.
                     </p>
 
-                    <p>$12,000.00</p>
+                    <p class = "precio">$12,000.00</p>
 
                     <button>Agregar al carrito</button>
+
                 </div>
 
             </div>
 
+        </div>
+
+    </section>
+
      <!--FILA 2-->
 
-        <div>
+    <section>
 
-            <div>
+        <div class="flex">
+
+            <div class="stat">
 
                 <img class = "imagen" src="./imagenes/producto2.jpg">
 
                 <div>
-                    <h3>Producto 2</h3>
+
+                    <h3 class="playfair">Producto 2</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quam deleniti sed recusandae vitae architecto eos corrupti.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam deleniti sed recusandae vitae architecto eos corrupti.
                     </p>
 
-                    <p>$12,000.00</p>
+                    <p class = "precio">$12,000.00</p>
 
                     <button>Agregar al carrito</button>
+
                 </div>
 
             </div>
 
-            <div>
+            <div class="stat">
 
                 <img class = "imagen" src="./imagenes/producto3.jpg">
 
                 <div>
-                    <h3>Producto 3</h3>
+
+                    <h3 class="playfair">Producto 3</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quam deleniti sed recusandae vitae architecto eos corrupti.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam deleniti sed recusandae vitae architecto eos corrupti.
                     </p>
 
-                    <p>$12,000.00</p>
+                    <p class = "precio">$12,000.00</p>
 
                     <button>Agregar al carrito</button>
+
                 </div>
 
             </div>
 
         </div>
 
-        <!--FILA 3-->
+    </section>  
 
-        <div>
+    <!--FILA 3-->
 
-            <div>
+    <section>
+
+        <div class = "flex">
+
+            <div class = "stat">
 
                 <img class = "imagen" src="./imagenes/producto4.jpg">
 
                 <div>
-                    <h3>Producto 4</h3>
+
+                    <h3 class="playfair">Producto 4</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quam deleniti sed recusandae vitae architecto eos corrupti.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam deleniti sed recusandae vitae architecto eos corrupti.
                     </p>
 
-                    <p>$12,000.00</p>
+                    <p class = "precio">$12,000.00</p>
 
                     <button>Agregar al carrito</button>
+
                 </div>
 
             </div>
 
-            <div>
+            <div class = "stat">
 
                 <img class = "imagen" src="./imagenes/producto5.jpg">
 
                 <div>
-                    <h3>Producto 5</h3>
+
+                    <h3 class="playfair">Producto 5</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quam deleniti sed recusandae vitae architecto eos corrupti.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam deleniti sed recusandae vitae architecto eos corrupti.
                     </p>
 
-                    <p>$12,000.00</p>
+                    <p class = "precio">$12,000.00</p>
 
                     <button>Agregar al carrito</button>
+            
                 </div>
 
             </div>
 
-            <div>
+            <div class = "stat">
 
                 <img class = "imagen" src="./imagenes/producto6.jpg">
 
                 <div>
-                    <h3>Producto 6</h3>
+
+                    <h3 class="playfair">Producto 6</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quam deleniti sed recusandae vitae architecto eos corrupti.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam deleniti sed recusandae vitae architecto eos corrupti.
                     </p>
 
-                    <p>$12,000.00</p>
+                    <p class = "precio">$12,000.00</p>
 
                     <button>Agregar al carrito</button>
+
                 </div>
 
             </div>
 
         </div>
+
     </section>
 
     <!--CATEGORÍA DE PRODUCTOS-->
 
-    <section>
-    <h2>Categorías de Productos</h2>
-        <div>
+    <h2 class="playfair">Categorías de Productos</h2>
 
-            <div>
+    <section>
+
+        <div class = "flex">
+
+            <div class = "stat">
 
                 <img class = "imagen" src="./imagenes/categoria1.jpg">
 
                 <div>
-                    <h3><a href="#">Oficina</a></h3>
+                    <h3 class="playfair"><a href="#">Oficina</a></h3>
                 </div>
 
             </div>
 
-            <div>
+            <div class = "stat">
 
                 <img class = "imagen" src="./imagenes/categoria2.jpg">
 
                 <div>
-                    <h3><a href="#">Hogar</a></h3>
+                    <h3 class="playfair"><a href="#">Hogar</a></h3>
                 </div>
 
             </div>
 
-            <div>
+            <div class = "stat">
 
                 <img class = "imagen" src="./imagenes/categoria3.jpg">
 
                 <div>
-                    <h3><a href="#">Cocina</a></h3>
+                    <h3 class="playfair"><a href="#">Cocina</a></h3>
                 </div>
 
             </div>
@@ -208,41 +248,53 @@
 
     <footer>
 
-        <section>
-            <h3>Categorías</h3>
+        <section class = "contenedor-footer">
 
-            <nav>
-                <a href="#">Cocina</a>
-                <a href="#">Oficina</a>
-                <a href="#">Jardín</a>
-                <a href="#">Cochera</a>
-                <a href="#">Dormitorios</a>
-            </nav>
-        </section>
+            <div>
 
-        <section>
-            <h3>Sobre nosotros</h3>
+                <h3 class="playfair">Categorías</h3>
 
-            <nav>
-                <a href="#">Nuestra historia</a>
-                <a href="#">Misión, Visión y Valores</a>
-                <a href="#">Carrera</a>
-                <a href="#">Políticas</a>
-                <a href="#">Términos del servicio</a>
-            </nav>
-        </section>
+                    <nav>
+                        <a href="#">Cocina</a>
+                        <a href="#">Oficina</a>
+                        <a href="#">Jardín</a>
+                        <a href="#">Cochera</a>
+                        <a href="#">Dormitorios</a>
+                    </nav> 
 
-        <section>
-            <h3>Soporte</h3>
+            </div>
+
+            <div>
+
+                <h3 class="playfair">Sobre nosotros</h3>
+
+                    <nav>
+                        <a href="#">Nuestra historia</a>
+                        <a href="#">Misión, Visión y Valores</a>
+                        <a href="#">Carrera</a>
+                        <a href="#">Políticas</a>
+                        <a href="#">Términos del servicio</a>
+                    </nav>
+
+            </div>
+
+            <div>
+
+                <h3 class="playfair">Soporte</h3>
             
-            <nav>
-            <a href="#">Preguntas frecuentes</a>
-            <a href="#">Ayuda</a>
-            <a href="#">Confianza y Seguridad</a>
-            </nav>
+                    <nav>
+                        <a href="#">Preguntas frecuentes</a>
+                        <a href="#">Ayuda</a>
+                        <a href="#">Confianza y Seguridad</a>
+                    </nav>
+
+            </div>
+
         </section>
 
-        <p>Todos los derechos reservados. TiendaMuebles</p>
+        <div class = "copyright">
+            <h2>Todos los derechos reservados. TiendaMuebles</h2>
+        </div>
 
     </footer>
 
