@@ -10,295 +10,318 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/app.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
 
-<body class="raleway">
+<body class=" h-100 m-0 raleway">
 
-    <header>
-        <h1 class="playfair">Tienda de <span class ="titulo">Muebles</span></h1>
-    </header>
+    <div class="container text-center bg-primary-subtle p-4">
 
-    <nav>
+        <header class = "container">
+            <div class = "row">
+                <h1 class="playfair">Tienda de <span class ="text-primary">Muebles</span></h1>
+            </div>
+        </header>
 
-        <div>
-            LOGO
+        <div class="row mb-2">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+
+                    <a class="navbar-brand text-white bg-success p-2" href="#">
+                        LOGO
+                    </a>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Tienda</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Galería</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white">Contacto</a>
+                            </li>
+
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search"
+                            placeholder="Buscar" aria-label="Buscar">
+
+                            <button class="btn btn-outline-light" type="submit">
+                                Buscar
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </nav>
         </div>
 
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Tienda</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-
-        <div>
-            <input type="text" placeholder="Buscar">
-            <button>Buscar</button>
-        </div>
-    </nav>
-
-    <div class="hero"></div>
-
-    <!--FILA 1-->
-
-    <h2 class="playfair">Nuestros productos</h2>
-
-    <section>
-
-        <div>
-
-            <div>
-
-                <div>
-                    <img src="./imagenes/producto1.jpg">
+        <div class="row">
+            <div class="col-12">
+                <div class="hero d-flex flex-column justify-content-center align-items-center text-center text-white">
+                    <h1 style="font-size:50px display-5 fw-bold">Tienda con Bootstrap</h1>
                 </div>
-
-                <div>
-
-                    <h3>Producto 1</h3>
-
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam deleniti sed recusandae vitae architecto eos corrupti.
-                    </p>
-
-                    <p>$12,000.00</p>
-
-                    <button>Agregar al carrito</button>
-
-                </div>
-
             </div>
-
         </div>
 
-    </section>
+        <!--FILA 1-->
 
-     <!--FILA 2-->
+        <h2 class="playfair">
+            Nuestros productos
+        </h2>
 
-    <section>
-
-        <div>
-
-            <div>
-
-                <img src="./imagenes/producto2.jpg">
-
-                <div>
-
-                    <h3>Producto 2</h3>
-
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam deleniti sed recusandae vitae architecto eos corrupti.
-                    </p>
-
-                    <p>$12,000.00</p>
-
-                    <button>Agregar al carrito</button>
-
+            <div class="row gx-0 mb-4">
+                <div class="col-12 col-xs-12 col-sm-6 border border-secondary p-0">
+                    <img class="w-100 h-100 d-block object-fit-cover" src="/imagenes/producto1.jpg">
                 </div>
-
+                <div class="col-12 col-sm-6 border border-secondary d-flex flex-column justify-content-center bg-primary text-white p-5">
+                    <h3 class="mb-4 playfair">Producto 1</h3>
+                    <p class="mb-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Iure numquam necessitatibus neque pariatur doloremque! Provident explicabo, 
+                        eaque quam nam soluta sed alias id mollitia illum neque architecto, 
+                        magnam dicta voluptatibus.
+                    </p>
+                    <p class = "fs-4 text mb-3">$12,000</p>
+                    <button class = "btn btn-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+                </div>
             </div>
 
-            <div>
+            <!--FILA 2-->
+            <section class="container mb-5">
+                <div class="row g-4">
 
-                <img src="./imagenes/producto3.jpg">
+                    <div class="col-12 col-md-6">
+                        <div class="border border-secondary h-100">
+                            <img class="w-100 d-block" src="/imagenes/producto2.jpg">
+                            <div class="d-flex flex-column justify-content-center bg-primary text-white p-5">
+                                <h3 class="mb-4 playfair">Producto 2</h3>
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Eaque unde, neque quas impedit, nam quidem aut enim possimus eveniet consequuntur 
+                                    accusantium dolorem aperiam non doloremque sit ad est nesciunt tempore.
+                                </p>
+                                <p class = "fs-4 text mb-3">$12,000</p>
+                                <button class = "btn btn-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>      
 
-                <div>
-
-                    <h3>Producto 3</h3>
-
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam deleniti sed recusandae vitae architecto eos corrupti.
-                    </p>
-
-                    <p>$12,000.00</p>
-
-                    <button>Agregar al carrito</button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>  
-
-    <!--FILA 3-->
-
-    <section>
-
-        <div>
-
-            <div>
-
-                <img src="./imagenes/producto4.jpg">
-
-                <div>
-
-                    <h3>Producto 4</h3>
-
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam deleniti sed recusandae vitae architecto eos corrupti.
-                    </p>
-
-                    <p>$12,000.00</p>
-
-                    <button>Agregar al carrito</button>
+                    <div class="col-12 col-md-6">
+                        <div class="border border-secondary h-100">
+                            <img class="w-100 d-block" src="/imagenes/producto3.jpg">
+                            <div class="d-flex flex-column justify-content-center bg-primary text-white p-5">
+                                <h3 class="mb-4 playfair">Producto 3</h3>
+                                <p class="mb-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Eaque unde, neque quas impedit, nam quidem aut enim possimus eveniet consequuntur 
+                                    accusantium dolorem aperiam non doloremque sit ad est nesciunt tempore.
+                                </p>
+                                <p class = "fs-4 text mb-3">$12,000</p>
+                                <button class = "btn btn-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-
-            </div>
-
-            <div>
-
-                <img src="./imagenes/producto5.jpg">
-
-                <div>
-
-                    <h3>Producto 5</h3>
-
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam deleniti sed recusandae vitae architecto eos corrupti.
-                    </p>
-
-                    <p>$12,000.00</p>
-
-                    <button>Agregar al carrito</button>
+            </section>
+            <!--FILA 3-->
             
+            <section class="container mb-5">
+                <div class="row g-4">
+
+                    <div class="col-12 col-lg-4">
+                        <div class="border border-secondary h-100">
+                            <img class="w-100 d-block" src="/imagenes/producto4.jpg">
+                                <div class="d-flex flex-column bg-primary text-white p-4 text-center">
+                                    <h3 class="mb-4 playfair">Producto 4</h3>
+                                    <p class="mb-4">
+                                        Lorem ipsum dolor sit amet consectetur, 
+                                        adipisicing elit. Necessitatibus expedita, 
+                                        minima sed optio ratione ullam mollitia rem animi 
+                                        reprehenderit dicta commodi deserunt tempora quisquam 
+                                        blanditiis amet temporibus quae ut similique?
+                                    </p>
+                                    <button class="btn btn-success w-auto mx-auto">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+                        <div class="border border-secondary h-100">
+                            <img class="w-100 d-block" src="/imagenes/producto5.jpg">
+                                <div class="d-flex flex-column bg-primary text-white p-4 text-center">
+                                    <h3 class="mb-4 playfair">Producto 5</h3>
+                                    <p class="mb-4">
+                                        Lorem ipsum dolor sit amet consectetur, 
+                                        adipisicing elit. Necessitatibus expedita, 
+                                        minima sed optio ratione ullam mollitia rem animi 
+                                        reprehenderit dicta commodi deserunt tempora quisquam 
+                                        blanditiis amet temporibus quae ut similique?
+                                    </p>
+                                    <button class="btn btn-success w-auto mx-auto">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+                        <div class="border border-secondary h-100">
+                            <img class="w-100 d-block" src="/imagenes/producto6.jpg">
+                                <div class="d-flex flex-column bg-primary text-white p-4 text-center">
+                                    <h3 class="mb-4 playfair">Producto 6</h3>
+                                    <p class="mb-4">
+                                        Lorem ipsum dolor sit amet consectetur, 
+                                        adipisicing elit. Necessitatibus expedita, 
+                                        minima sed optio ratione ullam mollitia rem animi 
+                                        reprehenderit dicta commodi deserunt tempora quisquam 
+                                        blanditiis amet temporibus quae ut similique?
+                                    </p>
+                                    <button class="btn btn-success w-auto mx-auto">Agregar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
+
+        <!--CATEGORÍA DE PRODUCTOS-->
+
+        <h2 class="playfair">Categorías de Productos</h2>
+
+        <section class="container mb-5">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-4">
+
+                    <div class="text-center">
+
+                        <img class = "w-100 d-block" src="/imagenes/categoria1.jpg">
+
+                        <div class="bg-primary py-2">
+                            <h3 class="playfair mb-0"><a href="#" class="text-decoration-none text-white">Oficina</a></h3>
+                        </div>
+
+                    </div>
+
                 </div>
 
-            </div>
+                <div class="col-12 col-md-4">
 
-            <div>
+                    <div class="text-center">
 
-                <img src="./imagenes/producto6.jpg">
+                        <img class = "w-100 d-block" src="/imagenes/categoria2.jpg">
 
-                <div>
+                        <div class="bg-primary py-2">
+                            <h3 class="playfair mb-0"><a href="#" class="text-decoration-none text-white">Hogar</a></h3>
+                        </div>
 
-                    <h3 class="playfair">Producto 6</h3>
-
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quam deleniti sed recusandae vitae architecto eos corrupti.
-                    </p>
-
-                    <p>$12,000.00</p>
-
-                    <button>Agregar al carrito</button>
+                    </div>
 
                 </div>
 
-            </div>
+                <div class="col-12 col-md-4">
 
-        </div>
+                    <div class="text-center">
 
-    </section>
+                        <img class = "w-100 d-block" src="/imagenes/categoria3.jpg">
 
-    <!--CATEGORÍA DE PRODUCTOS-->
+                        <div class="bg-primary py-2">
+                            <h3 class="playfair mb-0"><a href="#" class="text-decoration-none text-white">Cocina</a></h3>
+                        </div>
 
-    <h2 class="playfair">Categorías de Productos</h2>
+                    </div>
 
-    <section>
-
-        <div>
-
-            <div>
-
-                <img src="./imagenes/categoria1.jpg">
-
-                <div>
-                    <h3 class="playfair"><a href="#">Oficina</a></h3>
                 </div>
-
-            </div>
-
-            <div>
-
-                <img src="./imagenes/categoria2.jpg">
-
-                <div>
-                    <h3 class="playfair"><a href="#">Hogar</a></h3>
-                </div>
-
-            </div>
-
-            <div>
-
-                <img src="./imagenes/categoria3.jpg">
-
-                <div>
-                    <h3 class="playfair"><a href="#">Cocina</a></h3>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!--FOOTER-->
-
-    <footer class="container-xl">
-
-        <section>
-
-            <div>
-
-                <h3 class="playfair">Categorías</h3>
-
-                    <nav>
-                        <a href="#">Cocina</a>
-                        <a href="#">Oficina</a>
-                        <a href="#">Jardín</a>
-                        <a href="#">Cochera</a>
-                        <a href="#">Dormitorios</a>
-                    </nav> 
-
-            </div>
-
-            <div>
-
-                <h3 class="playfair">Sobre nosotros</h3>
-
-                    <nav>
-                        <a href="#">Nuestra historia</a>
-                        <a href="#">Misión, Visión y Valores</a>
-                        <a href="#">Carrera</a>
-                        <a href="#">Políticas</a>
-                        <a href="#">Términos del servicio</a>
-                    </nav>
-
-            </div>
-
-            <div>
-
-                <h3 class="playfair">Soporte</h3>
-            
-                    <nav>
-                        <a href="#">Preguntas frecuentes</a>
-                        <a href="#">Ayuda</a>
-                        <a href="#">Confianza y Seguridad</a>
-                    </nav>
 
             </div>
 
         </section>
 
-        <div>
-            <h2>Todos los derechos reservados. TiendaMuebles</h2>
-        </div>
+        <!--FOOTER-->
 
-    </footer>
+        <footer class="container-fluid p-0">
+
+            <section class="bg-dark text-white py-5">
+
+                <div class="container-xl">
+                    <div class="row">
+
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
+                            <h3 class="playfair">Categorías</h3>
+                            <nav class="d-flex flex-column gap-2">
+                                <a class="text-decoration-none text-white" href="#">Cocina</a>
+                                <a class="text-decoration-none text-white" href="#">Oficina</a>
+                                <a class="text-decoration-none text-white" href="#">Jardín</a>
+                                <a class="text-decoration-none text-white" href="#">Cochera</a>
+                                <a class="text-decoration-none text-white" href="#">Dormitorios</a>
+                            </nav>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
+                            <h3 class="playfair">Sobre nosotros</h3>
+                            <nav class="d-flex flex-column gap-2">
+                                <a class="text-decoration-none text-white" href="#">Nuestra historia</a>
+                                <a class="text-decoration-none text-white" href="#">Misión, Visión y Valores</a>
+                                <a class="text-decoration-none text-white" href="#">Carrera</a>
+                                <a class="text-decoration-none text-white" href="#">Políticas</a>
+                                <a class="text-decoration-none text-white" href="#">Términos del servicio</a>
+                            </nav>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
+                            <h3 class="playfair">Soporte</h3>
+                            <nav class="d-flex flex-column gap-2">
+                                <a class="text-decoration-none text-white" href="#">Preguntas frecuentes</a>
+                                <a class="text-decoration-none text-white" href="#">Ayuda</a>
+                                <a class="text-decoration-none text-white" href="#">Confianza y Seguridad</a>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="bg-black text-white text-center py-3">
+                <h2 class="mb-0">Todos los derechos reservados. TiendaMuebles</h2>
+            </div>
+
+        </footer>
+
+    </div>
 
     <script src="/js/bootstrap.bundle.min.js"></script>
 
