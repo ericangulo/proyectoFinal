@@ -58,7 +58,7 @@
     }
     */
     .hero {
-        background-image: url(../imagenes/principal.jpg);
+        background-image: url("../imagenes/principal.jpg");
         height: 300px;
         background-size: cover;
         background-position: center;
